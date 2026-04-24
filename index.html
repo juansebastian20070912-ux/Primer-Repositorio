@@ -1,257 +1,226 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Deportage</title>
-    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="icon" href="img/deportes.png">
+    <link rel="stylesheet" href="style.css">
+
+
 </head>
-<body>
-    <header class="header">
-    <div class="logo">
-        Depor<span class="logo-dot">.</span>Tage
-    </div>
-    <nav class="nav">
-        <button class="boton"><a href="#inicio">Inicio</a> </button>
-        <button class="boton"><a href="#galeria">Imágenes</a> </button>
-        <button class="boton"><a href="#formulario">Formulario</a></button>
+
+<body class="bg-light">
+
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand fw-bold fs-4" href="#inicio">⚽ DeporTage</a>
+
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="menuNavbar">
+
+                <ul class="navbar-nav ms-auto align-items-lg-center gap-2">
+                    <li class="nav-item">
+                        <a href="#inicio" class="nav-link">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#noticias" class="nav-link">Noticias</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#deportes" class="nav-link">Deportes</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="login.html" class="btn btn-outline-light btn-sm">Iniciar sesión</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="registro.html" class="btn btn-success btn-sm">Registrarse</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
     </nav>
-    <div class="redes">
-        <img src="img/instagram.png" alt="Instagram">
-        <img src="img/facebook.png" alt="Facebook">
-        <img src="img/twitter.png" alt="Twitter">
-    </div>
-    </header>
 
-<main class="padre">
-        <div class="inicio">
-            <h1>Bienvenidos a Deportage</h1>
-            <p><em>Su pagina deportiva de confianza</em></p>
+
+
+    <section id="inicio" class="bg-dark text-white text-center py-5">
+        <div class="container">
+            <h1 class="display-5 fw-bold mb-3">Bienvenidos a DeporTage</h1>
+            <p class="lead text-white-50 mb-4">
+                <em>Su página deportiva de confianza</em>
+            </p>
+            <div class="d-flex justify-content-center gap-3 flex-wrap">
+                <a href="#noticias" class="btn btn-warning btn-lg fw-bold">Ver noticias</a>
+                <a href="#deportes" class="btn btn-outline-light btn-lg">Explorar deportes</a>
+            </div>
         </div>
+    </section>
 
-        <div class="quienes-somos"  >
-            <h2>¿Quienes somos?</h2>
-            <p>Somos una <strong>empresa dedicada</strong> a brindar informacion deportiva de calidad, con el objetivo de mantener a nuestros usuarios informados sobre las ultimas noticias, resultados y eventos deportivos a nivel mundial.</p>
-        </div>
 
-        <section class="noticias-deportivas">
-            <h2>Noticias deportivas</h2>
-            <div class="noticias-grid">
-                <article class="tarjeta">
-                    <h3>Noticia 1: Victoria del Junior de Barranquilla</h3>
-                    <p>El equipo local ganó su último partido con un marcador de 3-0, demostrando un gran desempeño en defensa y ataque.</p>
-                    <img src="img/Partido.jpg" alt="Partido de futbol">
-                </article>
-                <article class="tarjeta">
-                    <h3>Noticia 2: Record de Usain Bolt</h3>
-                    <p>El legendario velocista Usain Bolt estableció un nuevo récord mundial en los 100 metros planos, con un tiempo de 9.58 segundos, consolidando su lugar como el hombre más rápido del mundo.</p>
-                    <img src="img/Record.jpg" alt="Usain Bolt corriendo">
-                </article>
+    <main class="container mt-5">
+
+
+        <section class="mb-5">
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="card shadow-sm border-0 p-4">
+                        <h2 class="fw-bold mb-3">¿Quiénes somos?</h2>
+                        <p class="text-muted">
+                            Somos una <strong>empresa dedicada</strong> a brindar información deportiva
+                            de calidad, con el objetivo de mantener a nuestros usuarios informados
+                            sobre las últimas noticias, resultados y eventos deportivos a nivel mundial.
+                        </p>
+
+
+                        <div class="row g-3 mt-2 text-center">
+                            <div class="col-4">
+                                <div class="bg-light rounded p-3">
+                                    <h4 class="fw-bold text-warning mb-0">+500</h4>
+                                    <small class="text-muted">Artículos</small>
+                                </div>
+                            </div>
+                            <div class="col-4">
+                                <div class="bg-light rounded p-3">
+                                    <h4 class="fw-bold text-warning mb-0">15</h4>
+                                    <small class="text-muted">Deportes</small>
+                                </div>
+                            </div>
+                            <div class="col-4">
+                                <div class="bg-light rounded p-3">
+                                    <h4 class="fw-bold text-warning mb-0">10K</h4>
+                                    <small class="text-muted">Lectores</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
 
-        <section class="deportes-populares">
-            <h2>Deportes Populares</h2>
-            <div class="deportes-grid">
-                <article class="tarjeta">
-                    <h3>Futbol</h3>
-                    <img src="img/BalonFut.png" alt="Balon de futbol" width="140">
-                    <p>El fútbol es el deporte más popular del mundo, con millones de seguidores en todo el planeta. Se juega entre dos equipos de once jugadores cada uno, y el objetivo es marcar más goles que el equipo contrario.</p>
-                </article>
-                <article class="tarjeta">
-                    <h3>Baloncesto</h3>
-                    <img src="img/baloncesto.png" alt="Balon de baloncesto" width="150">
-                    <p>El baloncesto es un deporte dinámico y emocionante que se juega entre dos equipos de cinco jugadores cada uno. El objetivo es encestar el balón en el aro del equipo contrario para anotar puntos.</p>
-                </article>
-                <article class="tarjeta">
-                    <h3>Atletismo</h3>
-                    <img src="img/Atletismo.png" alt="Atletas corriendo" width="150">
-                    <p>El atletismo es un conjunto de disciplinas deportivas que incluyen carreras, saltos y lanzamientos. Es uno de los deportes más antiguos y se practica en todo el mundo, con eventos como los Juegos Olímpicos siendo el escenario principal para los atletas de élite.</p>
-                </article>
+
+
+        <section id="noticias" class="mb-5">
+            <h2 class="text-center fw-bold mb-4">Noticias deportivas</h2>
+
+            <div class="row g-4">
+
+                <div class="col-md-6 d-flex">
+                    <div class="card h-100 shadow-sm border-0">
+
+                        <div class="ratio ratio-16x9">
+                            <img src="img/Partido.jpg" alt="Partido de fútbol">
+                        </div>
+                        <div class="card-body d-flex flex-column">
+
+                            <span class="badge bg-success mb-2 align-self-start">Fútbol</span>
+                            <h5 class="card-title fw-bold">Victoria del Junior de Barranquilla</h5>
+                            <p class="card-text text-muted">
+                                El equipo local ganó su último partido con un marcador de 3-0,
+                                demostrando un gran desempeño en defensa y ataque.
+                            </p>
+
+                            <a href="#" class="btn btn-outline-success mt-auto">Leer más</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 d-flex">
+                    <div class="card h-100 shadow-sm border-0">
+                        <div class="ratio ratio-16x9">
+                            <img src="img/Record.jpg" alt="Récord de Usain Bolt">
+                        </div>
+                        <div class="card-body d-flex flex-column">
+                            <span class="badge bg-warning text-dark mb-2 align-self-start">Atletismo</span>
+                            <h5 class="card-title fw-bold">Récord de Usain Bolt</h5>
+                            <p class="card-text text-muted">
+                                El legendario velocista estableció un récord mundial en los 100 metros
+                                planos con un tiempo de 9.58 segundos.
+                            </p>
+                            <a href="#" class="btn btn-outline-warning mt-auto">Leer más</a>
+                        </div>
+                    </div>
+                </div>
+
             </div>
         </section>
 
 
-        <div class="tablas">
-        <section class="resultados">
-            <h2>Tabla de resultados</h2>
-            <p>Resultados de los equipos en la liga local de futbol.</p>
-            <table class="tabla" border="1">
-                <tr>
-                    <th>Equipo</th>
-                    <th>Puntos</th>
-                </tr>
-                <tr>
-                    <td>Junior de Barranquilla</td>
-                    <td>21</td>
-                </tr>
-                <tr>
-                    <td>Fortaleza</td>
-                    <td>21</td>
-                </tr>
-                <tr>
-                    <td>Bucaramanga</td>
-                    <td>20</td>
-                </tr>
-                <tr>
-                    <td>Deportes Tolima</td>
-                    <td>20</td>
-                </tr>
-                <tr>
-                    <td>Medellin</td>
-                    <td>20</td>
-                </tr>
-                <tr>
-                    <td>Llaneros</td>
-                    <td>18</td>
-                </tr>
-            </table>
-        </section>
+        <section id="deportes" class="mb-5">
+            <h2 class="text-center fw-bold mb-4">Deportes populares</h2>
 
-        <section class="resultados">
-            <h2>Tabla de resultados de baloncesto</h2>
-            <p>Resultados de los equipos en la liga local de baloncesto.</p>
-            <table class="tabla" border="1">
-                <tr>
-                    <th>Equipo</th>
-                    <th>Puntos</th>
-                </tr>
-                <tr>
-                    <td>Boston Celtics</td>
-                    <td>30</td>
-                </tr>
-                <tr>
-                    <td>New York Knicks</td>
-                    <td>28</td>
-                </tr>
-                <tr>
-                    <td>Milwaukee Bucks</td>
-                    <td>25</td>
-                </tr>
-                <tr>
-                    <td>Cleveland Cavaliers</td>
-                    <td>22</td>
-                </tr>
-            </table>
-        </section>
+            <div class="row g-4">
 
-        <section class="resultados">
-            <h2>Tabla de resultados de atletismo</h2>
-            <p>Resultados de los atletas en la última competencia de atletismo.</p>
-            <table class="tabla" border="1">
-                <tr>
-                    <th>Atleta</th>
-                    <th>Disciplina</th>
-                    <th>Resultado</th>
-                </tr>
-                <tr>
-                    <td>Usain Bolt</td>
-                    <td>100 metros planos</td>
-                    <td>9.58 segundos</td>
-                </tr>
-                <tr>
-                    <td>Allyson Felix</td>
-                    <td>200 metros planos</td>
-                    <td>21.69 segundos</td>
-                </tr>
-                <tr>
-                    <td>Eliud Kipchoge</td>
-                    <td>Maratón</td>
-                    <td>1:59:40 horas</td>
-                </tr>
-            </table>
-        </section>
-        </div>
-        <section id="galeria">
-            <h2>Galeria de imagenes</h2>
-            <p>En esta sección encontrarás una selección de imágenes relacionadas con los deportes populares.</p>
-            <div class="galeria-grid">
-                <img src="img/Galeria.jpeg" alt="Imagen de futbol">
-                <img src="img/galeria2.jpeg" alt="Imagen de baloncesto">
-                <img src="img/galeria3.jpeg" alt="Imagen de atletismo">
+                <div class="col-md-4 d-flex">
+                    <div class="card h-100 shadow-sm border-0 text-center">
+
+                        <div class="bg-light p-4"
+                            style="height: 160px; display: flex; align-items: center; justify-content: center;">
+                            <img src="img/BalonFut.png" alt="Fútbol" style="max-height: 100px; object-fit: contain;">
+                        </div>
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title fw-bold">Fútbol</h5>
+                            <p class="card-text text-muted">
+                                El deporte más popular del mundo, jugado entre dos equipos de once jugadores.
+                            </p>
+                            <a href="#" class="btn btn-outline-dark btn-sm mt-auto">Ver más</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 d-flex">
+                    <div class="card h-100 shadow-sm border-0 text-center">
+                        <div class="bg-light p-4"
+                            style="height: 160px; display: flex; align-items: center; justify-content: center;">
+                            <img src="img/baloncesto.png" alt="Baloncesto"
+                                style="max-height: 100px; object-fit: contain;">
+                        </div>
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title fw-bold">Baloncesto</h5>
+                            <p class="card-text text-muted">
+                                Un deporte dinámico donde dos equipos intentan encestar el balón.
+                            </p>
+                            <a href="#" class="btn btn-outline-dark btn-sm mt-auto">Ver más</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 d-flex">
+                    <div class="card h-100 shadow-sm border-0 text-center">
+                        <div class="bg-light p-4"
+                            style="height: 160px; display: flex; align-items: center; justify-content: center;">
+                            <img src="img/Atletismo.png" alt="Atletismo"
+                                style="max-height: 100px; object-fit: contain;">
+                        </div>
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title fw-bold">Atletismo</h5>
+                            <p class="card-text text-muted">
+                                Incluye carreras, saltos y lanzamientos. Base de los Juegos Olímpicos.
+                            </p>
+                            <a href="#" class="btn btn-outline-dark btn-sm mt-auto">Ver más</a>
+                        </div>
+                    </div>
+                </div>
+
             </div>
         </section>
-        
-        <section id="cuestionario">
-            <h2>Cuestionario sobre deportes</h2>
-            <p>Responde las siguientes preguntas para poner a prueba tus conocimientos deportivos.</p>
-            <ol>
-                <li>
-                    ¿Cuál es el deporte más popular del mundo?
-                    <label for="respuesta1">Respuesta:</label>
-                    <input type="text" name="respuesta" id="respuesta1" placeholder="Escribe tu respuesta aquí">
-                </li>
-                <li>
-                    ¿Quién es el atleta más rápido del mundo?
-                    <label for="respuesta2">Respuesta:</label>
-                    <input type="text" name="respuesta" id="respuesta2" placeholder="Escribe tu respuesta aquí">
-                </li>
-                <li>
-                    ¿En qué año se celebraron los primeros Juegos Olímpicos modernos?
-                    <label for="respuesta3">Respuesta:</label>
-                    <input type="text" name="respuesta" id="respuesta3" placeholder="Escribe tu respuesta aquí">
-                </li>
-                <li>
-                    ¿Cuál es el equipo de fútbol con más títulos internacionales?
-                    <label for="respuesta4">Respuesta:</label>
-                    <input type="text" name="respuesta" id="respuesta4" placeholder="Escribe tu respuesta aquí">
-                </li>
-                <li>
-                    ¿Qué país ha ganado más medallas en la historia de los Juegos Olímpicos?
-                    <label for="respuesta5">Respuesta:</label>
-                    <input type="text" name="respuesta" id="respuesta5" placeholder="Escribe tu respuesta aquí">
-                </li>
-            </ol>
-        </section>
 
-        <section id="formulario">
-            <h2>Formulario</h2>
-            <p>Completa el siguiente formulario sobre tus gustos</p>
-            <form id="miFormulario" action="index.html" method="get">
-                <label for="nombre">Nombre:</label>
-                <input type="text" id="nombre" name="nombre" placeholder="Escribe tu nombre">
-                <br>
-                <label for="email">Correo electrónico:</label>
-                <input type="email" id="email" name="email" placeholder="Escribe tu correo electrónico">
-                <br>
-                <label for="edad">Edad:</label>
-                <input type="number" id="edad" name="edad" placeholder="Escribe tu edad">
-                <br>
-                <label for="deportista">Deportista favorito:</label>
-                <input type="text" id="deportista" name="deportista" placeholder="Escribe tu deportista favorito">
-                <br>
-                <label for="genero">Género:</label>
-                <select id="genero" name="genero">
-                    <option value="masculino">Masculino</option>
-                    <option value="femenino">Femenino</option>
-                    <option value="otro">Otro</option>
-                </select>
-                <br>
-                <label for="deporte">Deporte favorito:</label>
-                <select id="deporte" name="deporte">
-                    <option value="futbol">Fútbol</option>
-                    <option value="baloncesto">Baloncesto</option>
-                    <option value="atletismo">Atletismo</option>
-                    <option value="otro">Otro</option>
-                </select>
-                <br>
-                <input type="submit" value="Enviar formulario">
-            </form>
-        </section>
+    </main>
 
-        <section id="enlaces-externos">
-            <h2>Enlaces externos</h2>
-            <p>Aqui tendras enlaces para saber mas de cada una de las categorías deportivas.</p>
-            <ul>
-                <li><a href="https://www.fifa.com/">FIFA - Fútbol</a></li>
-                <li><a href="https://www.nba.com/">NBA - Baloncesto</a></li>
-                <li><a href="https://www.worldathletics.org/">World Athletics - Atletismo</a></li>
-            </ul>
-        </section>
-</main>
-    <footer>
-        <p>&copy; 2026 Deportage. Todos los derechos reservados.</p>
+
+
+    <footer class="bg-dark text-white text-center py-4 mt-5">
+        <p class="mb-1 fw-bold">⚽ DeporTage</p>
+        <p class="mb-0 text-white-50 small">© 2026 Deportage - Todos los derechos reservados</p>
     </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
 </body>
+
 </html>
